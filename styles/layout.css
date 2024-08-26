@@ -12,6 +12,15 @@ aside {
     }
 }
 
+main {
+    overflow-y: auto;
+    
+    & header a {
+        font-size: 1.6rem;
+        gap: .8rem;
+    }
+}
+
 @media (width >= 80em) {
     aside div {
         justify-items: inherit;

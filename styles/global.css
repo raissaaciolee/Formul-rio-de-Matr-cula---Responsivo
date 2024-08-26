@@ -36,6 +36,7 @@
 }
 
 html {
+    font: 400 var(--fs-sm)/1.5 var(--ff-poppins);
     color: var(--text-primary);
     overflow-x: hidden;
 }
@@ -54,7 +55,8 @@ h1 {
 }
 
 h2 {
-    font: var(--fw-bold) var(--fs-lg)/125% var(--ff-poppins);
+    font: var(--fw-semibold) var(--fs-lg)/125% var(--ff-poppins);
+    margin-block: 2.4rem .8rem;
 }
 
 p {
@@ -63,6 +65,11 @@ p {
 
 a {
     text-decoration: none;
+    color: var(--text-secondary);
+
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
 @media (width >= 80em) {

@@ -1,0 +1,14 @@
+form {
+    margin-top: 4.8rem;
+    gap: 4.8rem;
+
+    & fieldset {
+        border: none;
+        gap: 2rem;
+
+        & legend {
+            font: var(--fw-semibold) var(--fs-sm)/125% var(--ff-poppins);
+            margin-bottom: 2rem;
+        }
+    }
+}
