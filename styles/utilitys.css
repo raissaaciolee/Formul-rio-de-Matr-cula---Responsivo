@@ -1,0 +1,27 @@
+.container {
+    --max-width: 360px;
+    width: min(var(--max-width), 100% - var(--pd-x-y) * 2);
+    margin-inline: auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.grid {
+    display: grid;
+}
+
+.desktop-only {
+    display: none;
+}
+
+@media (width >= 80em) {
+    .container {
+        --max-width: 128rem;
+    }
+
+    .desktop-only {
+        display: inherit;
+    }
+}
