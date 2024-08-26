@@ -26,7 +26,7 @@
     font-size: 62.5%;
     --ff-poppins: "Poppins", system-ui, sans-serif;
 
-    --fw-bold: bold;
+    --fw-semibold: 600;
     --fs-xl: 3.2rem;
     --fs-lg: 2.4rem;
     --fs-md: 2rem;
@@ -36,7 +36,6 @@
 }
 
 html {
-    font: 400 var(--fs-sm)/1.5 var(--ff-poppins);
     color: var(--text-primary);
     overflow-x: hidden;
 }
@@ -46,9 +45,9 @@ main, aside {
 }
 
 h1 {
-    font: var(--fw-bold) 4rem/1.25 var(--ff-poppins);
-    max-width: 49.6rem;
-
+    font: var(--fw-semibold) 4rem/1.25 var(--ff-poppins);
+    padding-block: .8rem;
+    
     & span {
         color: var(--brand-dark);
     }
@@ -58,12 +57,12 @@ h2 {
     font: var(--fw-bold) var(--fs-lg)/125% var(--ff-poppins);
 }
 
-a {
-    text-decoration: none;
+p {
+    font: 400 var(--fs-sm)/1.5 var(--ff-poppins);
 }
 
-img {
-    width: 100%;
+a {
+    text-decoration: none;
 }
 
 @media (width >= 80em) {
@@ -73,11 +72,11 @@ img {
 
     body {
         display: flex;
+        flex-direction: row-reverse;
         
         & main, & aside {
             width: 50%;
             height: 100vh;
-            padding: var(--pd-x-y);
         }
     }
 }

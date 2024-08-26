@@ -1,0 +1,23 @@
+aside {
+    background-color: var(--surface-secondary);
+    overflow: hidden;
+
+    & div {
+        justify-items: center;
+
+        & img:last-child {
+            margin-top: 1.2rem;
+            width: 100%;
+        }
+    }
+}
+
+@media (width >= 80em) {
+    aside div {
+        justify-items: inherit;
+
+        & img:last-child {
+            margin-top: 3.2rem;
+        }
+    }
+}
