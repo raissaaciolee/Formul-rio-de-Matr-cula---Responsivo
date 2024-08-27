@@ -48,3 +48,9 @@ label {
     font: 400 1.4rem/150% var(--ff-poppins);
     color: var(--text-secondary);
 }
+
+input:disabled {
+    background-color: var(--surface-disabled);
+    color: var(--text-secondary);
+    opacity: 50%;
+}

@@ -8,6 +8,10 @@
     display: flex;
 }
 
+.gap-20 {
+    gap: 2rem;
+}
+
 .grid {
     display: grid;
 }

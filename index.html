@@ -37,7 +37,7 @@
             </header>
 
             <form action="" method="post" enctype="multipart/form-data" class="grid">
-                <fieldset class="grid">
+                <fieldset id="child-info" class="grid">
                     <legend>Informações da criança</legend>
 
                     <div class="input-wrapper">
@@ -77,6 +77,37 @@
                                 <path d="M12 13V21M12 13C11.2998 13 9.99153 14.9943 9.5 15.5M12 13C12.7002 13 14.0085 14.9943 14.5 15.5" stroke="#8F8881" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
                             <span>Clique aqui para selecionar arquivos</span>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset id="home-address" class="grid">
+                    <div class="input-wrapper">
+                        <label for="cep">CEP</label>
+                        <input type="text" maxlength="8" name="cep" id="cep" value="01234-567">
+                    </div>
+
+                    <div class="grid gap-20">
+                        <div class="input-wrapper">
+                            <label for="street">Rua</label>
+                            <input type="text" name="street" id="street" value="Rua das Flores" disabled>
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="number">Número</label>
+                            <input type="number" name="number" id="number" value="123">
+                        </div>
+                    </div>
+
+                    <div class="grid gap-20">
+                        <div class="input-wrapper">
+                            <label for="city">Cidade</label>
+                            <input type="text" name="city" id="city" value="São Paulo" disabled>
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="state">Estado</label>
+                            <input type="text" name="state" id="state" value="SP" disabled>
                         </div>
                     </div>
                 </fieldset>
