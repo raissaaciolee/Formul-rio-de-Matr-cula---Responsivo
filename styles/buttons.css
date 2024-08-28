@@ -1,0 +1,42 @@
+#buttons-container {
+    flex-direction: column;
+    gap: 1.6rem;
+
+    & button {
+        font: 500 var(--fs-sm)/150% var(--ff-poppins);
+        padding-block: 1.2rem;
+        border-radius: .8rem;
+        border: none;
+        cursor: pointer;
+    }
+
+    & button:first-child {
+        background-color: var(--surface-primary);
+        color: var(--brand-dark);
+        border: 2px solid var(--brand-dark);
+
+        &:hover {
+            outline: 3px solid var(--surface-secondary);
+        }
+    }
+
+    & button:last-child {
+        background-color: var(--brand-dark);
+        color: var(--surface-primary);
+
+        &:hover {
+            background-color: var(--brand-mid);
+        }
+    }
+}
+
+@media (width >= 80em) {
+    #buttons-container {
+        flex-direction: inherit;
+        justify-content: end;
+
+        & button {
+            padding-inline: 2.4rem;
+        }
+    }
+}
