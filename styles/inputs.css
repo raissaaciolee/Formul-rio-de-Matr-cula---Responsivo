@@ -49,8 +49,25 @@ label {
     color: var(--text-secondary);
 }
 
-input:disabled {
-    background-color: var(--surface-disabled);
-    color: var(--text-secondary);
-    opacity: 50%;
+input {
+    &[disabled] {
+        background-color: var(--surface-disabled);
+        color: var(--text-secondary);
+        opacity: 50%;
+    }
+
+    & + small {
+        display: inline-block;
+        color: #78716C;
+        font: 400 1.4rem/140% var(--ff-poppins);
+        margin-top: .4rem;
+    }
+    
+    &:invalid {
+        outline-color: var(--semantic-error);
+    }
+
+    &:not(:focus):valid + .error {
+        display: none;
+    }
 }

@@ -111,6 +111,103 @@
                         </div>
                     </div>
                 </fieldset>
+
+                <fieldset id="gardian-info" class="grid">
+                    <legend>Informações do responsável</legend>
+
+                    <div class="input-wrapper">
+                        <label for="gardian-name">Nome do responsável</label>
+                        <input type="text" name="gardian-name" id="gardian-name">
+                        <small>Principal responsável legal e contato de emergência</small>
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="gardian-phone">Telefone</label>
+                        <input type="tel" name="gardian-phone" id="gardian-phone" value="(10) 9 8765-4321">
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="gardian-email">E-mail</label>
+                        <input type="email" name="gardian-email" id="gardian-email" required>
+                        <small class="error flex items-center">
+                            <img src="./assets/icons/alert-circle.svg" alt="">
+                            <span>Insira um e-mail válido</span>
+                        </small>
+                    </div>
+                </fieldset>
+
+                <fieldset id="enrolls-options" class="grid">
+                    <legend>Opções de matrícula</legend>
+
+                    <div id="study-shift-container">
+                        <label for="study-shift">Selecione o turno de estudo</label>
+
+                        <div class="radio-container grid">
+
+                            <div class="radio-wrapper grid">
+                                <div class="radio-image"></div>
+                                <img src="./assets/icons/sun-cloud-02.svg" alt="">
+                                <input type="radio" name="study-shift" id="morning" value="morning" checked>
+                                <span>Manhã</span>
+                            </div>
+
+                            <div class="radio-wrapper grid">
+                                <div class="radio-image"></div>
+                                <img src="./assets/icons/sun-02.svg" alt="">
+                                <input type="radio" name="study-shift" id="evening" value="evening">
+                                <span>Tarde</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="registration-options-container">
+                        <label for="registration-options">Em qual esporte você gostaria de inscrever seu filho?</label>
+
+                        <div class="radio-container grid">
+                            <div class="radio-wrapper grid">
+                                <div class="radio-image"></div>
+                                <img src="./assets/icons/football.svg" alt="">
+                                <input type="radio" name="registration-options" id="football" value="football">
+                                <span>Futebol</span>
+                            </div>
+    
+                            <div class="radio-wrapper grid">
+                                <div class="radio-image"></div>
+                                <img src="./assets/icons/basketball-02.svg" alt="">
+                                <input type="radio" name="registration-options" id="basketball" value="basketball">
+                                <span>Basquete</span>
+                            </div>
+    
+                            <div class="radio-wrapper grid">
+                                <div class="radio-image"></div>
+                                <img src="./assets/icons/swimming.svg" alt="">
+                                <input type="radio" name="registration-options" id="swimming" value="swimming">
+                                <span>Natação</span>
+                            </div>
+    
+                            <div class="radio-wrapper grid">
+                                <div class="radio-image"></div>
+                                <img src="./assets/icons/yoga-02.svg" alt="">
+                                <input type="radio" name="registration-options" id="yoga" value="yoga">
+                                <span>Yoga</span>
+                            </div>
+    
+                            <div class="radio-wrapper grid">
+                                <div class="radio-image"></div>
+                                <img src="./assets/icons/volleyball.svg" alt="">
+                                <input type="radio" name="registration-options" id="volleyball" value="volleyball">
+                                <span>Volley</span>
+                            </div>
+    
+                            <div class="radio-wrapper grid">
+                                <div class="radio-image"></div>
+                                <img src="./assets/icons/boxing-glove-01.svg" alt="">
+                                <input type="radio" name="registration-options" id="boxing-glove" value="boxing-glove">
+                                <span>Box</span>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
             </form>
         </div>
     </main>

@@ -1,0 +1,68 @@
+#enrolls-options {
+    & .radio-container {
+        grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    }
+}
+
+#registration-options-container {
+    & .radio-container {
+        grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    }
+}
+
+fieldset {
+    & .radio-container {
+        gap: 1.6rem;
+        margin-top: 1.6rem;
+
+        & > div {
+            position: relative;
+            padding-block: 3.2rem 2.4rem;
+            border: 1px solid var(--stroke-default);
+            border-radius: .8rem;
+            place-content: center;
+            text-align: center;
+            cursor: pointer;
+
+            & .radio-image {
+                background: url(../assets/icons/circle-default.svg);
+                height: 2.4rem;
+                width: 2.4rem;
+                position: absolute;
+                top: .8rem;
+                left: .8rem;
+            }
+
+            & input {
+                all: unset;
+                position: absolute;
+                inset: 0;
+            }
+
+            & span {
+                font: 500 var(--fs-sm)/150% var(--ff-poppins);
+                margin-top: .8rem;
+            }
+
+            &:hover, &:focus-within {
+                & {
+                    outline: 2px solid var(--stroke-highlight);
+
+                    & .radio-image {
+                        background: url(../assets/icons/circle-focus.svg);
+                    }
+                }
+            }
+
+            &:has(:checked) {
+                & {
+                    outline: 2px solid var(--stroke-highlight);
+
+                    & .radio-image {
+                        background: url(../assets/icons/circle-checked.svg);
+                    }
+                } 
+            }
+        }
+    }
+}

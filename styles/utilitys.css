@@ -36,6 +36,14 @@
     border-width: 0;
 }
 
+.error {
+    gap: .4rem;
+
+    & span {
+        color: var(--semantic-error);
+    }
+}
+
 @media (width >= 80em) {
     .container {
         --max-width: 128rem;
