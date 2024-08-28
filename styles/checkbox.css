@@ -1,0 +1,30 @@
+#terms-and-conditions-container {
+    gap: 1.2rem;
+    
+    & .checkbox-image {
+        position: relative;
+        height: 2.4rem;
+        flex: 0 0 2rem;
+        background: url(../assets/icons/checkbox-default.svg) no-repeat 100%/contain;
+        cursor: pointer;
+
+        & input {
+            all: unset;
+            position: absolute;
+            inset: 0;
+        }
+
+        &:focus-within, &:hover {
+            background: url(../assets/icons/checkbox-focus.svg) no-repeat 100%/contain;
+        }
+
+        &:has(:checked) {
+            background: url(../assets/icons/checkbox-checked.svg) no-repeat 100%/contain;
+        }
+    }
+
+    & p a {
+        color: #E43A12;
+        font-weight: 500;
+    }
+}
