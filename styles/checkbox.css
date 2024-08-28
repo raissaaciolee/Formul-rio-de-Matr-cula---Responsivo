@@ -3,7 +3,7 @@
     
     & .checkbox-image {
         position: relative;
-        height: 2.4rem;
+        height: 2rem;
         flex: 0 0 2rem;
         background: url(../assets/icons/checkbox-default.svg) no-repeat 100%/contain;
         cursor: pointer;

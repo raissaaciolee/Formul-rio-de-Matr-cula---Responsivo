@@ -66,3 +66,9 @@ fieldset {
         }
     }
 }
+
+@media (width >= 80em) {
+    #registration-options-container .radio-container {
+        grid-template-columns: repeat(4, minmax(12rem, 1fr));
+    }
+}

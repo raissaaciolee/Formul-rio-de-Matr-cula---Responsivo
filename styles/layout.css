@@ -13,6 +13,7 @@ aside {
 }
 
 main {
+    background-color: var(--surface-primary);
     overflow-y: auto;
     
     & header a {
